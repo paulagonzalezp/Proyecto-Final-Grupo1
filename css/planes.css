@@ -1,0 +1,115 @@
+/* Estilos Generales */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+    padding-top: 70px; /* Espacio para la barra de navegación fija */
+}
+
+/* Encabezado Principal */
+.header-bg {
+    background-color: #e2f0cb; /* Verde claro */
+    padding: 40px 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+}
+
+.header-bg h1 {
+    font-size: 2.8rem;
+    color: #4caf50; /* Verde medio */
+    margin: 0;
+}
+
+.header-bg p {
+    font-size: 1.2rem;
+    color: #4caf50; /* Verde medio */
+    margin-top: 10px;
+}
+
+/* Tarjetas de Comidas */
+.meal-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.meal-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.meal-card h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.meal-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Botón Principal */
+.btn-primary {
+    background-color: #28a745;
+    border-color: #218838;
+    font-size: 1.1rem;
+    padding: 12px 24px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+/* Contenedor del Formulario */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Sección de Contacto */
+.text-center {
+    text-align: center;
+}
+
+.text-center p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Imágenes */
+img {
+    max-width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    .header-bg h1 {
+        font-size: 2.2rem;
+    }
+
+    .header-bg p {
+        font-size: 1rem;
+    }
+
+    .meal-card {
+        padding: 15px;
+    }
+}

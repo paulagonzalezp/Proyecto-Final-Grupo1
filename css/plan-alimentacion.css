@@ -1,0 +1,127 @@
+/* Estilos generales */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f7f7;
+}
+
+/* Estilo de la sección del plan de alimentación */
+#plan {
+    background-color: #f0f8f8;
+    padding: 60px 0;
+}
+
+.narrow-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #007b5e; /* Verde personalizado */
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 15px 15px 0 0;
+    text-align: center;
+}
+
+.card-body {
+    padding: 40px;
+    background-color: #fff;
+}
+
+.card-title {
+    font-size: 1.8rem;
+    color: #007b5e;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+/* Estilo de los botones */
+.diabetes-type-option {
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin: 5px;
+    transition: all 0.3s ease;
+    border: 2px solid #007b5e;
+    color: #007b5e;
+}
+
+.diabetes-type-option:hover {
+    background-color: #007b5e;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.btn-custom {
+    background-color: #007b5e;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.btn-custom:hover {
+    background-color: #005b47;
+}
+
+/* Estilo de los inputs */
+.input-group-text {
+    background-color: #007b5e;
+    color: white;
+    border-radius: 10px 0 0 10px;
+    border: none;
+}
+
+input[type="number"], 
+select {
+    border: 2px solid #007b5e;
+    border-radius: 0 10px 10px 0;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+input[type="number"]:focus, 
+select:focus {
+    border-color: #005b47;
+    box-shadow: none;
+}
+
+/* Estilo del footer del plan */
+.card-footer {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+#diet-plan h2 {
+    font-size: 1.6rem;
+    color: #007b5e;
+    margin-bottom: 20px;
+}
+
+#meal-details p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}

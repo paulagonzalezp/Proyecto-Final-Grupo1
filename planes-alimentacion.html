@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planes de planes-alimentacion - NutriDiab</title>
+
+  <!-- CSS de Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+
+  <!-- Fuentes de Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Scripts de Bootstrap y jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/plan.js" defer></script>
+</head>
+
+<body>
+  <!-- MENÚ -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="imagenes/imagen.jpg" width="60" height="60" class="d-inline-block align-top" alt="Logo NutriDiab">
+      <span class="ml-2 custom-font">NutriDiab</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="educacion.html"><i class="bi bi-info-circle"></i> Cómo funciona</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="recetas.html"><i class="bi bi-search"></i> Explorar alimentos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="planes-alimentacion.html"><i class="bi bi-journal"></i> Dietas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="php/contactar.php"><i class="bi bi-envelope"></i> Contactar</a>
+        </li>
+      </ul>
+      <div class="navbar-btns ml-auto">
+        <a class="btn btn-outline-danger" href="php/registro.php"><i class="bi bi-person-plus"></i> Registrarse</a>
+        <a class="btn btn-outline-primary ml-2" href="php/iniciarsesion.php"><i class="bi bi-box-arrow-in-right"></i>
+          Iniciar sesión</a>
+      </div>
+    </div>
+  </nav>
+  <!-- MENÚ -->
+
+  <!-- TÍTULO PRINCIPAL -->
+  <div class="container mt-5">
+    <header class="header-bg text-center">
+      <h1 class="mb-4">Planes de Alimentación para Diabetes</h1>
+    </header>
+  </div>
+  <!-- TÍTULO PRINCIPAL -->
+
+  <!-- SECCIÓN DE PLANES NUTRICIONALES -->
+  <section class="my-5">
+    <!-- Plan Diabetes Tipo 1 -->
+    <div id="tipo1" class="card mb-3" style="max-width: 1200px; margin: 0 auto; border: 1px solid #ccc; padding: 10px;">
+      <img src="imagenes/plan3.jpeg" class="card-img-top" alt="Sopa de Lentejas con Espinacas">
+      <div class="card-body">
+        <h5 class="card-title">Plan Diabetes Tipo 1</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Desayuno</h6>
+        <p class="card-text">
+          Opción 1: Avena con frutas frescas y nueces.<br>
+          Opción 2: Yogur griego con bayas y granola baja en azúcar.
+        </p>
+        <h6 class="card-subtitle mb-2 text-muted">Almuerzo</h6>
+        <p class="card-text">
+          Opción 1: Pechuga de pollo al curry con vegetales al vapor.<br>
+          Opción 2: Ensalada de espinacas con salmón ahumado y aguacate.
+        </p>
+        <h6 class="card-subtitle mb-2 text-muted">Cena</h6>
+        <p class="card-text">
+          Opción 1: Filete de pescado a la parrilla con espárragos.<br>
+          Opción 2: Tacos de pavo con tortillas integrales y ensalada.
+        </p>
+      </div>
+    </div>
+
+    <!-- Plan Diabetes Tipo 2 -->
+    <div id="tipo2" class="card mb-3" style="max-width: 1200px; margin: 0 auto; border: 1px solid #ccc; padding: 10px;">
+      <img src="imagenes/plan3.jpeg" class="card-img-top" alt="Smoothie Verde con Espinacas y Pepino">
+      <div class="card-body">
+        <h5 class="card-title">Plan Diabetes Tipo 2</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Desayuno</h6>
+        <p class="card-text">
+          Opción 1: Tostadas integrales con aguacate y huevo.<br>
+          Opción 2: Batido de frutas con yogur natural.
+        </p>
+        <h6 class="card-subtitle mb-2 text-muted">Almuerzo</h6>
+        <p class="card-text">
+          Opción 1: Ensalada de garbanzos con espinacas y pollo a la plancha.<br>
+          Opción 2: Salmón al horno con quinoa y vegetales.
+        </p>
+        <h6 class="card-subtitle mb-2 text-muted">Cena</h6>
+        <p class="card-text">
+          Opción 1: Pechuga de pollo con puré de calabaza.<br>
+          Opción 2: Estofado de ternera con verduras mixtas.
+        </p>
+      </div>
+    </div>
+
+    <!-- Plan Diabetes Gestacional -->
+    <div id="gestacional" class="card mb-3"
+      style="max-width: 1200px; margin: 0 auto; border: 2px solid #ccc; padding: 10px;">
+      <img src="imagenes/plan3.jpeg" class="card-img-top" alt="Ensalada de Garbanzos y Tomates Cherry">
+      <div class="card-body">
+        <h5 class="card-title">Plan Diabetes Gestacional</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Desayuno</h6>
+        <p class="card-text">
+          Opción 1: Yogur griego con trozos de frutas y granola.<br>
+          Opción 2: Pan integral con queso cottage y frutas frescas.
+        </p>
+        <h6 class="card-subtitle mb-2 text-muted">Almuerzo</h6>
+        <p class="card-text">
+          Opción 1: Ensalada de atún con espinacas y tomates cherry.<br>
+          Opción 2: Pechuga de pavo con puré de batata y vegetales asados.
+        </p>
+        <h6 class="card-subtitle mb-2 text-muted">Cena</h6>
+        <p class="card-text">
+          Opción 1: Filete de ternera con brócoli al vapor.<br>
+          Opción 2: Sopa de vegetales con un toque de jengibre y ajo.
+        </p>
+      </div>
+    </div>
+
+    <!-- Más Planes -->
+    <div class="row">
+      <div class="col">
+        <p class="text-center">
+          Para más detalles sobre cómo funcionan nuestros planes nutricionales y cómo pueden ayudarte, no dudes en
+          <a href="contactar.html">contactarnos</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- SECCIÓN DE PLANES NUTRICIONALES -->
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="text-center py-4 footer-bg">
+    <div class="container">
+      <p class="mb-0">&copy; 2024 NutriDiab. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <!-- PIE DE PÁGINA -->
+
+</body>
+
+</html>

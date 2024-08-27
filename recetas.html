@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explora recetas - NutriDiab</title>
+
+  <!-- CSS de Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+
+  <!-- Fuentes de Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <!-- Scripts de Bootstrap y jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/plan.js" defer></script>
+</head>
+
+<body>
+  <!-- MENÚ -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="imagenes/imagen.jpg" width="60" height="60" class="d-inline-block align-top" alt="Logo NutriDiab">
+      <span class="ml-2 custom-font">NutriDiab</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="educacion.html"><i class="bi bi-info-circle"></i> Cómo funciona</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="recetas.html"><i class="bi bi-search"></i> Explorar alimentos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="planes-alimentacion.html"><i class="bi bi-journal"></i> Dietas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="php/contactar.php"><i class="bi bi-envelope"></i> Contactar</a>
+        </li>
+      </ul>
+      <div class="navbar-btns ml-auto">
+        <a class="btn btn-outline-danger" href="php/registro.php"><i class="bi bi-person-plus"></i> Registrarse</a>
+        <a class="btn btn-outline-primary ml-2" href="php/iniciarsesion.php"><i class="bi bi-box-arrow-in-right"></i> Iniciar sesión</a>
+      </div>
+    </div>
+  </nav>
+  <!-- MENÚ -->
+  
+  <!-- TITULO -->
+  <div class="container mt-5">
+    <header class="header-bg text-center">
+      <h1 class="mb-4">Explora recetas saludables</h1>
+    </header>
+    <p class="lead mb-4">Descubre opciones deliciosas y nutritivas para tu dieta.</p>
+  <!-- TITULO -->
+
+  <!-- Recetas -->
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <img src="imagenes/ensalada.jpg" class="card-img-top" alt="Ensalada de Quinoa y Verduras" />
+        <div class="card-body">
+          <h5 class="card-title">Ensalada de Quinoa y Verduras</h5>
+          <p class="card-text">
+            Una ensalada deliciosa y nutritiva, ideal para personas con diabetes tipo 2. Rica en fibra y baja en carbohidratos.
+          </p>
+          <a href="recetas/recetas-ensalada.html" class="btn btn-primary">Ver Receta</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <img src="imagenes/tofu-vegetales.jpg" class="card-img-top" alt="Tofu y Vegetales Salteados" />
+        <div class="card-body">
+          <h5 class="card-title">Tofu y Vegetales Salteados</h5>
+          <p class="card-text">
+            Un plato bajo en carbohidratos y rico en proteínas vegetales. Perfecto para un almuerzo ligero.
+          </p>
+          <a href="recetas/recetas-tofu.html" class="btn btn-primary">Ver Receta</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <img src="imagenes/sopa-lentejas.jpg" class="card-img-top" alt="Sopa de Lentejas con Espinacas" />
+        <div class="card-body">
+          <h5 class="card-title">Sopa de Lentejas con Espinacas</h5>
+          <p class="card-text">
+            Una sopa rica en fibra y hierro, ideal para mantener la saciedad y controlar los niveles de glucosa.
+          </p>
+          <a href="recetas/recetas-sopa.html" class="btn btn-primary">Ver Receta</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Más recetas -->
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <img src="imagenes/pollo-brocoli.jpg" class="card-img-top" alt="Pechuga de Pollo al Horno con Brócoli" />
+        <div class="card-body">
+          <h5 class="card-title">Pechuga de Pollo al Horno con Brócoli</h5>
+          <p class="card-text">
+            Una comida rica en proteínas y baja en carbohidratos, ideal para una dieta controlada en azúcar.
+          </p>
+          <a href="recetas/recetas-pollo.html" class="btn btn-primary">Ver Receta</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <img src="imagenes/smoothie-verde.jpg" class="card-img-top" alt="Smoothie Verde con Espinacas y Pepino" />
+        <div class="card-body">
+          <h5 class="card-title">Smoothie Verde con Espinacas y Pepino</h5>
+          <p class="card-text">
+            Una bebida refrescante y baja en carbohidratos, rica en vitaminas y minerales. Ideal para un desayuno.
+          </p>
+          <a href="recetas/recetas-Smoothie.html" class="btn btn-primary">Ver Receta</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <img src="imagenes/ensalada-garbanzos.jpg" class="card-img-top" alt="Ensalada de Garbanzos y Tomates Cherry" />
+        <div class="card-body">
+          <h5 class="card-title">Ensalada de Garbanzos</h5>
+          <p class="card-text">
+            Una ensalada rica en fibra y proteínas, ideal para mantener estables los niveles de glucosa en sangre.
+          </p>
+          <a href="recetas/recetas-Garbanzos.html" class="btn btn-primary">Ver Receta</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <p class="text-center">
+        Descubre más recetas saludables y adaptables a tu dieta <a href="planes-alimentacion.html">aquí</a>.
+      </p>
+    </div>
+  </div>
+  </div>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="text-center py-4 footer-bg">
+    <div class="container">
+      <p class="mb-0">&copy; 2024 NutriDiab. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <!-- PIE DE PÁGINA -->
+
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../imagenes/registro.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 700px;
+    margin: 100px auto 0;
+}
+
+.card-header {
+    background-color: #38a169;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    color: #1a202c;
+}
+
+.diabetes-type-options {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.diabetes-type-option {
+    background-color: #38a169;
+    color: #fff;
+    border-radius: 50%;
+    padding: 40px;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 130px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.diabetes-type-option:hover {
+    background-color: #2f855a;
+}
+
+.diabetes-type-option i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.input-group-text {
+    background-color: #9ae6b4;
+    border-radius: 5px 0 0 5px;
+    color: #1a202c;
+}
+
+.form-control {
+    border-radius: 0 5px 5px 0;
+    padding: 10px;
+}
+
+.btn-custom {
+    background-color: #38a169;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: 100%;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn-custom:hover {
+    background-color: #2f855a;
+}
+
+.card-footer {
+    background-color: #e9f5f2;
+    padding: 20px;
+    border-radius: 0 0 15px 15px;
+    text-align: center;
+    color: #1a202c;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

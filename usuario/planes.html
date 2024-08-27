@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenida - NutriDiab</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CSS personalizado -->
+    <style>
+       .welcome-container {
+            margin-top: 0; /* Elimina el margen superior */
+            padding-top: 0; /* Elimina el relleno superior si es necesario */
+            height: 100vh;
+            background-image: url('../imagenes/fondoaj.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .navbar {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar-brand img {
+            border-radius: 50%;
+        }
+
+        .navbar-toggler {
+            border: none;
+            background-color: #87c78b;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar-toggler:hover {
+            background-color: #76b86c;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><path stroke="currentColor" stroke-width="2" d="M5 7h20M5 15h20M5 23h20"/></svg>');
+            background-size: 20px 20px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .main-content {
+            text-align: center;
+            margin-top: 100px; /* Ajusta este valor para mover el contenido hacia abajo */
+        }
+
+        .main-content h2 {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .modal-content {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+    <script src="../js/gestion.js" defer></script>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="inicio_usuario.html">
+                <a class="navbar-brand d-flex align-items-center" href="inicio_usuario.html">
+                    <img src="../imagenes/imagen.jpg" width="45" height="45" class="d-inline-block align-top" alt="Logo NutriDiab">
+                    <span class="ml-2 custom-font" style="font-size: 1.5rem; vertical-align: middle;">NutriDiab</span>
+                </a>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="inicio_usuario.html">
+                                <i class="bi bi-house-door"></i> Inicio
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="planes.html">
+                                <i class="bi bi-calendar-check"></i> Planificador
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../php/seguimiento-diario.php">
+                                <i class="bi bi-journal-text"></i> Seguimiento Diario
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../php/contactar_usuario.php">
+                                <i class="bi bi-person-lines-fill"></i> Contactar Profesionales
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="planificador.html">
+                                <i class="bi bi-menu-button-wide"></i> Planes de Alimentación
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">
+                                <i class="bi bi-box-arrow-right"></i> Cerrar Sesión
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+<!-- CONTENIDO PRINCIPAL -->
+<div class="container-fluid welcome-container d-flex align-items-center justify-content-center">
+    <div class="welcome-card text-center p-5" style="background-color: rgba(255, 255, 255, 0.8); border-radius: 15px;">
+        <h1 class="display-4" style="font-family: 'Poppins', sans-serif; font-weight: 700;">
+            ¡Gestión de <span style="vertical-align: middle;">Recetas para Diabetes!</span>
+        </h1>
+        <div class="controls mb-3">
+            <button id="add-recipe-btn" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createRecipeModal">
+                <i class="bi bi-plus-circle"></i> Nueva Receta
+            </button>
+            <button id="filter-all" class="btn btn-secondary"><i class="bi bi-funnel"></i> Todas</button>
+            <button id="filter-breakfast" class="btn btn-warning"><i class="bi bi-sun"></i> Desayuno</button>
+            <button id="filter-lunch" class="btn btn-success"><i class="bi bi-egg-fried"></i> Almuerzo</button>
+            <button id="filter-dinner" class="btn btn-info"><i class="bi bi-cloud-moon"></i> Cena</button>
+        </div>
+        <table class="table table-bordered" id="recipes-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Tipo</th>
+                    <th>Ingredientes</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Contenido dinámico -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+    <!-- Modal para añadir receta -->
+    <div class="modal fade" id="createRecipeModal" tabindex="-1" aria-labelledby="createRecipeModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="createRecipeModalLabel">Nueva Receta</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="createRecipeForm">
+                        <div class="form-group">
+                            <label for="create-recipe-type">Tipo de Comida:</label>
+                            <select class="form-control" id="create-recipe-type" name="type" required>
+                                <option value="desayuno">Desayuno <i class="bi bi-sun"></i></option>
+                                <option value="almuerzo">Almuerzo <i class="bi bi-egg-fried"></i></option>
+                                <option value="cena">Cena <i class="bi bi-cloud-moon"></i></option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="create-recipe-name">Nombre de la Receta:</label>
+                            <input type="text" class="form-control" id="create-recipe-name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="create-recipe-ingredients">Ingredientes:</label>
+                            <textarea class="form-control" id="create-recipe-ingredients" name="ingredients" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-3">Guardar Receta</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para editar receta -->
+    <div class="modal fade" id="editRecipeModal" tabindex="-1" aria-labelledby="editRecipeModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editRecipeModalLabel">Editar Receta</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="editRecipeForm">
+                        <div class="form-group">
+                            <label for="edit-recipe-name">Nombre de la Receta:</label>
+                            <input type="text" class="form-control" id="edit-recipe-name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="edit-recipe-ingredients">Ingredientes:</label>
+                            <textarea class="form-control" id="edit-recipe-ingredients" name="ingredients" rows="3" required></textarea>
+                        </div>
+                        <input type="hidden" id="edit-recipe-id" name="id">
+                        <button type="submit" class="btn btn-primary mt-3">Actualizar Receta</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para eliminar receta -->
+    <div class="modal fade" id="deleteRecipeModal" tabindex="-1" aria-labelledby="deleteRecipeModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deleteRecipeModalLabel">Eliminar Receta</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>¿Estás seguro de que deseas eliminar esta receta?</p>
+                    <input type="hidden" id="delete-recipe-id">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-danger" id="confirm-delete-btn">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

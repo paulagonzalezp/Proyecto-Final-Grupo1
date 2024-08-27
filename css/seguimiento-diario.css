@@ -1,0 +1,67 @@
+/* General Styling */
+body {
+    padding-top: 70px; /* Space for the fixed navbar */
+    font-family: Arial, sans-serif; /* Tipografía más limpia */
+    background-image: url('../imagenes/diabetes.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2 {
+    color: #2c3e50;
+    font-weight: 700; /* Letra más gruesa */
+    border-radius: 8px;
+}
+
+/* Tarjetas */
+.card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo semitransparente para ver la imagen de fondo */
+}
+
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Formulario de Seguimiento */
+#trackingForm {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.form-label {
+    font-weight: 700; /* Letra más gruesa y redondeada */
+    border-radius: 8px;
+}
+
+.form-control, .form-select {
+    border-radius: 8px;
+    box-shadow: none;
+    border: 1px solid #ced4da;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+}
+
+/* Resumen del Seguimiento Diario */
+#resumen-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenida - NutriDiab</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="../css/usuario.css">
+    <link rel="stylesheet" href="../css/bienvenida.css">
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <style>
+        body, html {
+            margin: 1;
+            padding: 1;
+        }
+        .navbar {
+            padding: 0; /* Ajusta según sea necesario */
+        }
+        .welcome-container {
+            margin-top: 0; /* Elimina el margen superior */
+            padding-top: 0; /* Elimina el relleno superior si es necesario */
+            height: 100vh;
+            background-image: url('../imagenes/fondoaj.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="inicio_usuario.html">
+                <a class="navbar-brand d-flex align-items-center" href="inicio_usuario.html">
+                    <img src="../imagenes/imagen.jpg" width="45" height="45" class="d-inline-block align-top" alt="Logo NutriDiab">
+                    <span class="ml-2 custom-font" style="font-size: 1.5rem; vertical-align: middle;">NutriDiab</span>
+                </a>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="inicio_usuario.html">
+                                <i class="bi bi-house-door"></i> Inicio
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="planes.html">
+                                <i class="bi bi-calendar-check"></i> Planificador
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../php/seguimiento-diario.php">
+                                <i class="bi bi-journal-text"></i> Seguimiento Diario
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../php/contactar_usuario.php">
+                                <i class="bi bi-person-lines-fill"></i> Contactar Profesionales
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="planificador.html">
+                                <i class="bi bi-menu-button-wide"></i> Planes de Alimentación
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">
+                                <i class="bi bi-box-arrow-right"></i> Cerrar Sesión
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido de bienvenida -->
+    <div class="container-fluid welcome-container d-flex align-items-center justify-content-center">
+        <div class="welcome-card text-center p-5" style="background-color: rgba(255, 255, 255, 0.8); border-radius: 15px;">
+            <h1 class="display-4" style="font-family: 'Poppins', sans-serif; font-weight: 700;">
+                ¡Bienvenido a <span style="vertical-align: middle;">NutriDiab</span>!
+                <img src="../imagenes/imagen.jpg" width="45" height="45" class="d-inline-block align-top" alt="Logo NutriDiab" style="vertical-align: middle;">
+            </h1>
+            <p>Estamos encantados de tenerte con nosotros. Aquí encontrarás toda la información y herramientas necesarias para ayudarte a alcanzar tus objetivos nutricionales.</p>
+            <div class="options">
+                <div class="option-card">
+                    <i class="bi bi-calendar-check"></i>
+                    <h3 style="font-family: 'Poppins', sans-serif;">Planificador de Comidas</h3>
+                    <p>Organiza tus comidas y haz un seguimiento de tu progreso.</p>
+                    <a href="planes.html" class="btn btn-primary">Ir al Planificador</a>
+                </div>
+                <div class="option-card">
+                    <i class="bi bi-graph-up"></i>
+                    <h3 style="font-family: 'Poppins', sans-serif;">Seguimiento de Progreso</h3>
+                    <p>Monitorea tus avances y ajusta tu plan según tus necesidades.</p>
+                    <a href="../php/seguimiento-diario.php" class="btn btn-primary">Ver Progreso</a>
+                </div>
+                <div class="option-card">
+                    <i class="bi bi-chat-dots"></i>
+                    <h3 style="font-family: 'Poppins', sans-serif;">Contactar Profesionales</h3>
+                    <p>Habla con nuestros expertos para obtener consejos sobre tu alimentacion.</p>
+                    <a href="../php/contactar_usuario.php" class="btn btn-primary">Contactar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center mt-4 mb-4">
+        <p>&copy; 2024 NutriDiab. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
